@@ -2,9 +2,14 @@
 
 /* 共通部分 */
 
-html, body {
-	font-family: sans-serif;
+html {
+	font-size: 62.5%;
+}
+
+body {
 	text-align: center;
+	font-size: 1.4rem;
+	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 body, div, p, h1, h2, h3, h4, ul, figure {
@@ -23,8 +28,14 @@ img {
 }
 
 header, section {
-	height: 50vh;
 	border: dashed 1px #000;
+}
+
+.heading {
+	margin: 30px 0 15px;
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+	font-size: 4rem;
 }
 
 
@@ -33,31 +44,45 @@ header, section {
 header {
 	background: #151515;
 	color: #fff;
-	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    font-size: 1.4rem
+	padding: 170px 30px 50px;
 }
 
-.header-inner{
-    position: relative;
-    top: 30%;
+.site-title-sub {
+	margin: 0 0 30px;
+	letter-spacing: 1px;
+	font-size: 2.2rem;
 }
 
-header li{
-    margin: 0 25px 0 25px;
+.site-title {
+	margin: 50px 0 40px;
+	font-size: 7.6rem;
 }
 
-header a{
-    width: 200px;
-    padding: 20px;
-    border-radius: 4px;
-    background-color: #afa58d;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 1.2rem;
+.description {
+	margin-bottom: 50px;
+	color: #888;
+	font-size: 1.6rem;
 }
-header a:hover{
-    opacity: 0.9;
+
+header a {
+	display: inline-block;
+	width: 200px;
+	padding: 20px;
+	border-radius: 4px;
+	background-color: #afa58d;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+header a:hover {
+	opacity: 0.9;
+}
+
+.send-message {
+	background: #D29E04;
 }
 
 .header-bottun, .works-images, .myskills-item {
@@ -65,6 +90,42 @@ header a:hover{
 	justify-content: center;
 	/* flex中央寄せ */
 }
+
+header h1, header p {}
+
+h2 {}
+
+
+/* セクション */
+
+
+/* ABOUTME */
+
+.aboutme {
+	padding: 80px 30px;
+	background-color: #fff;
+	color: #333;
+}
+
+.aboutme p {
+	margin: 30px 0;
+	line-height: 2.5;
+}
+
+
+/* WORKS */
+
+.works {
+	padding: 80px 0;
+	background-color: #383634;
+    color: #fff; /* あとで消す */
+}
+
+
+/* MY SKILLS */
+
+
+/* CONTACT */
 
 
 /*フッター*/
