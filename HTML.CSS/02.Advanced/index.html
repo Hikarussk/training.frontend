@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!-- スマートフォン向けページが無ければ以下のmetaタグをコメントアウトすること -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- ファビコンの設定 -->
+<!-- <link rel="shortcut icon" href=""> -->
+<!-- <link rel="apple-touch-icon" href=""> -->
+<!-- metadescription=説明欄 -->
+<!-- <meta name="description" content=""> -->
+<title>シングルページレイアウト</title>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+<div class="header-inner">
+    <p>Web designer's portfolio</p>
+    <h1>HI, MY NAME IS...</h1>
+    <p>Check out some of my works.</p>
+    <ul>
+        <li><a href="#about">LEARN MORE</a></li>
+        <li><a href="#contact">SEND MESSAGE</a></li>
+    </ul>
+</div>
+</header>
+<section class="ABOUTME">
+    <h2 class="heading">ABOUT ME</h2>
+    <p class="about-text">
+        はじめまして。日本でWebデザイナーをしています。<br> デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
+    </p>
+    <p class="about-text">
+        このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。<br> このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
+    </p>
+</section>
+<section class="WORKS">
+    <h2 class="heading">WORKS</h2>
+    <ul>
+        <li>
+            <img src="images/tree.jpg" alt="制作事例1">
+            <p class="work-text">
+                ひとつめの制作事例が入ります。<br> 簡単な説明が入ります。
+                <br> 使用ツール：XXX, XXX, XXX<br>
+                <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+        </li>
+        <li>
+            <img src="images/building.jpg" alt="制作事例2">
+            <p class="work-text">
+                ふたつめの制作事例が入ります。<br> 簡単な説明が入ります。
+                <br> 使用ツール：XXX, XXX, XXX<br>
+                <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+        </li>
+        <li>
+            <img src="images/lake.jpg" alt="制作事例3">
+            <p class="work-text">
+                みっつめの制作事例が入ります。<br> 簡単な説明が入ります。
+                <br> 使用ツール：XXX, XXX, XXX<br>
+                <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+        </li>
+        <li>
+            <img src="images/sky.jpg" alt="制作事例4">
+            <p class="work-text">
+                よっつの制作事例が入ります。<br> 簡単な説明が入ります。
+                <br> 使用ツール：XXX, XXX, XXX<br>
+                <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+        </li>
+    </ul>
+</section>
+<section class="MYSKILLS">
+    <h2 class="heading">MY SKILLS</h2>
+    <i class="skill-icon fa fa-lightbulb-o"></i>
+    <div class="skill-title">IDEA</div>
+    <p class="skill-text">
+        何かを考えることが好きです。<br> 新しいことを思いついては試しています。
+        <br> ディレクションの経験もあります。
+    </p>
+    <i class="skill-icon fa fa-paint-brush"></i>
+    <div class="skill-title">DESIGN</div>
+    <p class="skill-text">
+        見た目の綺麗さだけじゃなくて、<br> 使いやすさ、情報の伝わりやすさなど、
+        <br> その先まで考えることを意識しています。
+    </p>
+    <i class="skill-icon fa fa-code"></i>
+    <div class="skill-title">CODING</div>
+    <p class="skill-text">
+        HTML/CSSコーディングも行います。<br> 正しく美しいマークアップと、
+        <br> 今後の変更への強さを考慮しています。
+    </p>
+</section>
+<section class="CONTACT">
+    <h2 class="heading">CONTACT</h2>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="NAME">
+        <textarea name="message" placeholder="MESSAGE"></textarea>
+        <input type="submit" value="SEND">
+    </form>
+</section>
+<footer>
+    © sample site
+</footer>
+</body>
+</html>
