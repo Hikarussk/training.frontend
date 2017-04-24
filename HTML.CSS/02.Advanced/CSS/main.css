@@ -4,9 +4,11 @@
 
 html, body {
 	font-family: sans-serif;
+	text-align: center;
 }
 
 body, div, p, h1, h2, h3, h4, ul, figure {
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
@@ -20,10 +22,49 @@ img {
 	height: auto;
 }
 
+header, section {
+	height: 50vh;
+	border: dashed 1px #000;
+}
+
 
 /* ヘッダー */
 
-header {}
+header {
+	background: #151515;
+	color: #fff;
+	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 1.4rem
+}
+
+.header-inner{
+    position: relative;
+    top: 30%;
+}
+
+header li{
+    margin: 0 25px 0 25px;
+}
+
+header a{
+    width: 200px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+header a:hover{
+    opacity: 0.9;
+}
+
+.header-bottun, .works-images, .myskills-item {
+	display: flex;
+	justify-content: center;
+	/* flex中央寄せ */
+}
 
 
 /*フッター*/
