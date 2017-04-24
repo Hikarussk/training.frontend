@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* 共通部分 */
+
+html, body {
+	font-family: sans-serif;
+}
+
+body, div, p, h1, h2, h3, h4, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+
+p, td, th, li {
+	line-height: 1.8;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* ヘッダー */
+
+header {}
+
+
+/*フッター*/
+
+footer {}
