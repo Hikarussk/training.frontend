@@ -30,7 +30,7 @@ img {
 }
 
 .heading {
-	margin: 30px 0 15px;
+	margin: 0 0 0;
 	padding-bottom: 15px;
 	letter-spacing: 2px;
 	font-size: 4rem;
@@ -146,17 +146,17 @@ h2 {}
 
 /* セクション */
 
+section {}
+
 
 /* ABOUTME */
 
 .aboutme {
-	padding: 80px 30px;
 	background-color: #fff;
 	color: #333;
 }
 
 .aboutme p {
-	margin: 30px 0;
 	line-height: 2.5;
 }
 
@@ -165,47 +165,52 @@ h2 {}
 
 .works {
 	position: relative;
-	width: 100%;
-	padding: 80px 30px;
 	background-color: #383634;
 	color: #fff;
 	/* あとで消す */
 }
 
+.works ul {
+}
+.works li {
+    width: 100%;
+}
+
 .works li:nth-of-type(1) {
-	background: url(../images/tree.jpg);
+	background: url(../images/tree.jpg) no-repeat;
+	background-size: 100% auto;
 }
 
 .works li:nth-of-type(2) {
-	background: url(../images/building.jpg);
+	background: url(../images/building.jpg) no-repeat;
+	background-size: 100% auto;
 }
 
 .works li:nth-of-type(3) {
-	background: url(../images/lake.jpg);
+	background: url(../images/lake.jpg) no-repeat;
+	background-size: 100% auto;
 }
 
 .works li:nth-of-type(4) {
-	background: url(../images/sky.jpg);
+	background: url(../images/sky.jpg) no-repeat;
+	background-size: 100% auto;
 }
 
 
 /* MY SKILLS */
 
 .myskills {
-	padding: 70px 0;
 	background-color: #fff;
 	color: #333;
 }
 
 .myskills-item li {
-	margin: 50px 20px;
 	margin-bottom: 0;
 }
 
 .myskills i {
 	width: 150px;
 	height: 150px;
-	margin-bottom: 30px;
 	border-radius: 50%;
 	font-size: 8rem;
 	color: #f1b400;
@@ -214,7 +219,6 @@ h2 {}
 }
 
 .skill-title {
-	margin: 0 20px 20px;
 	font-size: 2rem;
 }
 
@@ -228,11 +232,6 @@ h2 {}
 
 .contact {
 	color: #fff;
-	padding: 80px 30px 110px;
-}
-
-.contact-form {
-	margin-top: 50px;
 }
 
 input[type='text'], textarea, input[type='submit'] {
@@ -252,7 +251,6 @@ textarea {
 }
 
 input[type='submit'] {
-	margin: 30px;
 	height: 50px;
 	width: 200px;
 	border-radius: 5px;
