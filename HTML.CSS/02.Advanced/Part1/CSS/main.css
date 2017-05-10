@@ -4,7 +4,12 @@
 html{
     font-size: 62.5%;
 }
-
+body{
+    color: #333333;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+/*    line-height: 1;*/
+}
 body,div,p,h1,h2,h3,h4,ul,figure{
     margin: 0;
     padding: 0;
@@ -15,7 +20,7 @@ li{
 .heading,
 .news-list>li:nth-child(even){
     background:url(../img/bg-slash.gif);
-    padding: 10px;
+    padding: 10px 12px;
 }
 .sidebar:nth-of-type(1)>section>.heading{
     margin-bottom: 20px;
@@ -23,7 +28,7 @@ li{
 /*heder*/
 header{
     text-align: center;
-    background: url(../img/bg-header.gif);
+    background: url(../img/bg-header.gif) repeat-x;;
     padding: 28px 0 10px;
 }
 /*menuのセンタリング(float:left)*/
@@ -33,12 +38,12 @@ nav{
     overflow: hidden;
 }
 .header-nav{
-    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.2);
+    box-shadow: 6px 6px 8px -4px rgba(0, 0, 0, 0.15);
     margin-bottom: 30px;
 }
 .top,
 .thumbnailbox-list>li{
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 6px 6px 8px -4px rgba(0, 0, 0, 0.15);
 }
 .header-container>a>img{
     position: relative;
@@ -48,27 +53,31 @@ nav{
     float: left;
     left: 50%;
     position: relative;
-    margin-top: 20px;
 }
 .header-list > li{
-    margin-left: 50px;
     float: left;
     left: -50%;
     position: relative;
-    padding: 5px 25px;
-    margin: 10px 20px 10px;
-    border-radius: 8px;
+    margin: 0 15px 10px;
 }
 .header-list > li > a{
+    display: inline-block;
+    padding: 5px 25px;
+    text-align: center;
     text-decoration: none;
     color: #666666;
     font-size: 1.3rem;
+    border-radius: 8px;
+    letter-spacing: 1px;
 }
-.header-list>li:first-child{
+.header-list>li>a:hover{
     background:#d03c56;
     color: #FFFFFF;
+    transition: 0.3s ease;
 }
-.header-list>li:first-child>a{
+
+ .header-list>li:first-child>a{
+    background:#d03c56;
     color: #FFFFFF;
 }
 
@@ -80,7 +89,8 @@ main{
 .sidebar{
     width: 275px;
 }
-.wrapper{
+.wrapper,
+footer>nav{
     width: 970px;
     margin: auto;
 }
@@ -103,7 +113,7 @@ main,.sidebar{
     width: 50%;
     height: 100%;
     float: left;
-    background: #2d3d54;
+    background: #2D3D54;
 }
 .top-date{
     background: #FFFFFF;
@@ -119,14 +129,23 @@ main,.sidebar{
     color: #FFFFFF;
     font-size: 2.0rem;
     font-weight: normal;
-    margin: 30px;
+    margin: 30px 30px 15px;
 }
 .top-comment{
-    color: #ddc;
-    font-size: 100%;
-    width: 250px;
+    color: #DDC;
+    font-size: 12px;
+    width: 280px;
     margin:auto;
 }
+/*hover*/
+.top:hover,
+.thumbnailbox-list>li:hover,
+.rank-list>li:hover{
+    opacity: 0.8;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
 
 /*news*/
 .news{
@@ -138,7 +157,7 @@ main,.sidebar{
     font-size: 1.2rem;
 }
 .news-list>li{
-    padding: 10px;
+    padding: 10px 12px;
 }
 /*三点リーダ*/
 .news-list>li,
@@ -147,18 +166,29 @@ main,.sidebar{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.news-list>li>.date{
+    width: 19%;
+    font-weight: bold;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+}
 .news-category,
 .topic-category{
+    display: inline-block;
+    text-align: center;
+    width: 8%;
     color: #FFFFFF;
-    border-radius: 3px;
-    padding: 3px;
-    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+    line-height: 16px;
+    margin: 0 10px 0 10px;
 }
 .news-category{
-    background: #2c3c53;
+    background: #2C3C53;
 }
 .topic-category{
-    background: #d03c56;
+    background: #D03C56;
 }
 
 /*blog*/
@@ -189,14 +219,15 @@ main,.sidebar{
     float: right;
 }
 .thumbnailbox-date{
-    color: #2d3d54;
-    background: #b5d264;
+    color: #2D3D54;
+    background: #B5D264;
     width: 40%;
     float: right;
     text-align: center;
     margin: 15px 0 10px;
     padding: 2px 10px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 /*sidebar*/
 .sidebar{
@@ -207,27 +238,27 @@ main,.sidebar{
     
 }
 .rank-list{
-    
+    margin-bottom: 30px;
 }
 .rank-list>li{
-    margin-bottom: 15px;
+    margin-bottom: 10px
 }
 .rank-number{
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 8%;
-    margin: 0 10px 0 10px;
+    vertical-align: 20px;
     color: #CCCCCC;
+    margin-left: 10px;
 }
 .rank-number:before{
     content: '';
     position: absolute;
     padding: 10px;
-    margin-left: -6px;
-    margin-top: -3px;
     border: solid 1px #CCCCCC;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     z-index: -1;
+    margin:20px 0 0 -6px;
+}
+.rank-text{
+    
 }
 /*ランキング番号*/
 .rank-list>li:nth-of-type(1)>.rank-number,
@@ -251,8 +282,11 @@ main,.sidebar{
 }
 .rank-list>li>span:nth-child(odd){
     display: inline-block;
-    width: 60%;
+    width: 182px;
     vertical-align: top;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    float: right;
 }
 /*//ランキング番号*/
 
@@ -262,18 +296,26 @@ main,.sidebar{
 }
 .documents-list>li>h3{
     padding-left: 10px;
-    border-left: solid 5px #d03c56;
+    border-left: solid 5px #D03C56;
     margin: 15px 0;
 }
-.documents-list>li:nth-of-type(1)>p,
-.documents-list>li:nth-of-type(2)>p,
-.documents-list>li:nth-of-type(3)>p{
+.documents-list>li:nth-of-type(1)>a,
+.documents-list>li:nth-of-type(2)>a,
+.documents-list>li:nth-of-type(3)>a{
+    display: block;
+    text-decoration: none;
     padding-left:20px;
-    margin: 15px;
+    margin: 5px;
     background: url(../img/arrow.gif) no-repeat left 10px top 4px;
     color: #D03C56;
     font-size: 100%;
 }
+.documents-list>li:nth-of-type(1)>a:hover,
+.documents-list>li:nth-of-type(2)>a:hover,
+.documents-list>li:nth-of-type(3)>a:hover{
+    text-decoration: underline;
+}
+
 .inside-form{
     background: #CCC;
     text-align: center;
@@ -286,15 +328,15 @@ main,.sidebar{
     margin-top: 10px;
 }
 input[type='submit']{
-    padding: 0.5px 10px;
+    padding: 1.6px 10px;
     font-size: 1.2em;
     background-color: #d03c56;
-    color: #fff;
+    color: #FFFFFF;
     border-style: none;
 }
 input[type='text']{
     border-style: none;
-    padding: 10px 10px;
+    padding: 6px 10px;
     width: 70%;
 }
 /*footer*/
@@ -307,8 +349,8 @@ footer{
 }
 .footer-nav>li{
     float: left;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .footer-nav>li+ li {
     border-left: 0;
