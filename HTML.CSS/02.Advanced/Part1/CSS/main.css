@@ -17,18 +17,22 @@ body,div,p,h1,h2,h3,h4,ul,figure{
 li{
     list-style: none;
 }
+.heading{
+    font-size: 1.6rem;
+    padding: 10px 12px;
+}
 .heading,
 .news-list>li:nth-child(even){
     background:url(../img/bg-slash.gif);
-    padding: 10px 12px;
 }
 .sidebar:nth-of-type(1)>section>.heading{
     margin-bottom: 20px;
 }
 /*heder*/
 header{
+    width: 100%;
     text-align: center;
-    background: url(../img/bg-header.gif) repeat-x;;
+    background: url(../img/bg-header.gif) repeat-x;
     padding: 28px 0 10px;
 }
 /*menuのセンタリング(float:left)*/
@@ -39,7 +43,6 @@ nav{
 }
 .header-nav{
     box-shadow: 6px 6px 8px -4px rgba(0, 0, 0, 0.15);
-    margin-bottom: 30px;
 }
 .top,
 .thumbnailbox-list>li{
@@ -58,11 +61,13 @@ nav{
     float: left;
     left: -50%;
     position: relative;
-    margin: 0 15px 10px;
+    margin: 10px 10px 10px;
 }
 .header-list > li > a{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
     display: inline-block;
-    padding: 5px 25px;
     text-align: center;
     text-decoration: none;
     color: #666666;
@@ -103,6 +108,7 @@ main,.sidebar{
 /*top*/
 .top{
     height: 300px;
+    margin-top: 20px;
 }
 .top>a>img{
     width: 50%;
@@ -122,8 +128,9 @@ main,.sidebar{
     font-weight: bold;
     letter-spacing:1px;
     width: 140px;
-    padding: 2px 10px;
+    padding: 4px;
     margin-top: 60px;
+    line-height: 1;
 }
 .top-heading>h2{
     color: #FFFFFF;
@@ -157,7 +164,7 @@ main,.sidebar{
     font-size: 1.2rem;
 }
 .news-list>li{
-    padding: 10px 12px;
+    padding: 10px 15px;
 }
 /*三点リーダ*/
 .news-list>li,
@@ -299,9 +306,7 @@ main,.sidebar{
     border-left: solid 5px #D03C56;
     margin: 15px 0;
 }
-.documents-list>li:nth-of-type(1)>a,
-.documents-list>li:nth-of-type(2)>a,
-.documents-list>li:nth-of-type(3)>a{
+.documents-list>li>a{
     display: block;
     text-decoration: none;
     padding-left:20px;
@@ -310,9 +315,7 @@ main,.sidebar{
     color: #D03C56;
     font-size: 100%;
 }
-.documents-list>li:nth-of-type(1)>a:hover,
-.documents-list>li:nth-of-type(2)>a:hover,
-.documents-list>li:nth-of-type(3)>a:hover{
+.documents-list>li>a:hover{
     text-decoration: underline;
 }
 
